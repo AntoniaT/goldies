@@ -6,40 +6,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+   <!-- <link rel="stylesheet" href="bootstrap/dist/css/custom.css" type="text/css">-->
     <title>Hello, world!</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">
-                    <img src="images/Logo-yellow.png" width="100" alt="logo">
-                  </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Events</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">For organizers</a>
-                </li>
-                </ul>
-                <form class="form-inline">
-                        <button class="btn btn-outline-success" type="button">Sign up</button>
-                </form>
-            </div>
-            </nav>
-    <h1>Hello, world!</h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <a class="navbar-brand" href="#">
+                        <img src="images/Logo-yellow.png" width="100" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Events</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">How</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="companies.html">For companies</a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <button class="btn btn-dark my-2 my-sm-0" type="submit">Sign up</button>
+                  </form>
+                </div>
+              </nav>
     
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                    </div>
+                    <div class="col-sm">
+                      <h1 class="display-5">Laughing is healthy -<br>join our fun events</h1>
+                      <p>Search for an event in your area</p>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Your area" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="basic-addon2">Search</span>
+                            </div>
+                        </div>
+                    </div>            
+            </div>
+            </div>
+        </div>
+        <!--First section container-->
+          <div class="container mt-5">
+            <!-- Example row of columns -->
+            <div class="row">
+              <div class="col-sm">
+                <h2>We connect likeminded people and fight loneliness among seniors</h2>
+                <p>Did you know socialising can strengthen your immune system? Studies showed that friendships improve physical and mental health. There are tons of things you can do, not matter how old you are! We are here to help you making your life enjoyable.</p>
+                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+              </div>
+              <div class="col-sm">
+                <img class="img-fluid" src="images/gardening.jpg" alt="woman gardening">
+              </div>
+            </div>
+    
+            <hr>
+    
+          </div> <!-- /container -->
+
+        <!--Second section container-->
+          <div class="container mt-5">
+            <h2 class="text-center">Discover activities you will love</h2>
+            <p class="text-center">Are you a passionate chess player, or do you have a green thumb? There is something for everyone. Find out what activities your city offers and start having fun today!</p>
+            <!-- Carousel Slider Images-->
+            <div class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col"><img class="img-fluid" src="images/gardening.jpg" alt="1 slide"></div>
+                                <div class="col"><img class="img-fluid" src="images/senioren-spielen.jpg" alt="2 slide"></div>
+                                <div class="col"><img class="img-fluid" src="images/gardening.jpg" alt="3 slide"></div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+          </div>
+        <!--Third section container-->
+        <div class="container mt-5">
+                <!-- Example row of columns -->
+                <div class="row">
+                  <div class="col-sm">
+                    <h2>Choose the transport <br>that fits your needs</h2>
+                    <p>Would you like to leave your house, but feel unsteady on your feet? No problem with Goldies! With each event you can choose your preferred transport mode and get picked up right on your door steps.</p>
+                    <p>Because we care for our environment at Goldies, we encourage you to try our Cargo Bike and get some wind in your hair!</p>
+                    <p><a class="btn btn-secondary" href="#" role="button">Try Cargo Bike ride</a></p>
+                  </div>
+                  <div class="col-sm">
+                    <img class="img-fluid" src="images/gardening.jpg" alt="woman gardening">
+                  </div>
+                </div>
+        
+                <hr>
+        
+        </div>        
+        <!--Fourth section container-->
+        <div class="container mt-5">
+                <div class="text-center">
+                        <h2>What do clients say about Goldies?</h2>
+                </div>
+                <!-- Example row of columns -->
+                <div class="row">
+                  <div class="col-sm">
+                    <p>I missed spending time with likeminded people. When you’re old, everything is about sacrifices and health problems. With Goldies I can just have a good time without worrying about transport!</p>
+                    <img class="img-fluid rounded-circle w-25" src="images/review-1.jpg" alt="woman gardening">
+                  </div> 
+                  <div class="col-sm">
+                      <p>I’ve worked for Cycling Without Age for 11 years now, but with Goldies help we were able to reach 200% more seniors and help them enjoy some fresh air. Highly recommended!</p>
+                    <img class="img-fluid rounded-circle w-25" src="images/review-1.jpg" alt="woman gardening">
+                  </div>
+                </div>
+        
+                <hr>
+        
+        </div>
+        </main>
+    
+     <!--Footer -->
+        <footer id="footer" class="bg-warning pt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <h4>Contact</h4>
+                        <p>contact@goldies.dk<br>Revstevej 76<br>1435 København<br>Danmark</p>
+                    </div>
+                    <div class="col-sm">
+                        <h4>Impressum</h4>
+                        <p>Terms and conditions<br>Privacy Policy</p>
+                        </div>
+                    <div class="col-sm">
+                        <img class="img-fluid w-50" src="images/Logo-white.png" alt="goldies logo">
+                        <p>&copy; Goldies 2020</p>
+                    </div>
+                    <div class="col-sm">
+                        <h4>Join Goldies</h4>
+                        <p><a class="btn btn-dark" href="#" role="button">Sign up</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
