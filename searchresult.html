@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="custom.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Goldies - Seniors</title>
+  </head>
+  <body>
+         <!-- Nav Bar -->
+         <nav id="nav-background" class="navbar navbar-expand-lg navbar-light bg-white">
+                <a class="navbar-brand" href="index.html">
+                        <img src="images/Logo-yellow.png" width="130" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link text-dark h5 ml-4 mt-2" href="#about">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark h5 ml-4 mt-2" href="#events">Events</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark h5 ml-4 mt-2" href="how.html">How</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark h5 ml-4 mt-2" href="companies.html">For companies</a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <a class="nav-link text-dark h5 ml-5 mt-2" href="logIn-customer.html">Log in</a>
+                    <a class="btn btn-outline-warning my-2 my-sm-0 signUp btn-lg" href="join-customer.html" role="button">Sign up</a>
+                  </form>
+                </div>
+              </nav>
+    <!-- Search Events results -->
+        <div class="container-fluid mt-5">
+              <h1 class="text-center">Discover activities in</h1>
+              <h2 id="newAreaField" class="text-center">test</h2>
+                <!-- Carousel Slider Images-->
+                <div class="container mt-5">
+                    <div class="row mb-5">
+                        <div class="col-sm mt-5">
+                        <div class="card cardModal" style="width: 18rem;" onclick="openModal()">
+                                <img class="card-img-top" src="images/photos/cycling-ride.png" alt="Card image cap">
+                                <div class="card-body">
+                                        <h5 class="card-title">Cycling trip</h5>
+                                        <p class="card-subtitle mb-2 pink newLocation"><i class="material-icons md-18">room</i><span>new area</span></p>
+                                        <p class="card-subtitle mb-2"><span> Feb 12, 4pm</span></p>
+                                        <p class="card-text">Cycling without age</p>
+                                        <p class="card-text"><small class="text-muted">15 Goldies</small></p>
+                                </div>
+                        </div>
+                        </div>
+                        <div class="col-sm mt-5">
+                        <div class="card cardModal" style="width: 18rem;" onclick="openModal()">
+                                <img class="card-img-top" src="images/senioren-spielen.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                        <h5 class="card-title">Senior Soft Yoga class</h5>
+                                        <p class="card-subtitle mb-2 pink newLocation2"><i class="material-icons md-18">room</i><span>new area</span></p>
+                                        <p class="card-subtitle mb-2"><span> Feb 15, 3pm</span></p>
+                                        <p class="card-text">Sunrise Yoga Studio</p>
+                                        <p class="card-text"><small class="text-muted">7 Goldies</small></p>
+                                </div>
+                        </div>
+                        </div>
+                        <div class="col-sm mt-5">
+                            <div class="card cardModal" style="width: 18rem;" onclick="openModal()">
+                                <img class="card-img-top" src="images/photos/granny-pc.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Understand your computer</h5>
+                                    <p class="card-subtitle mb-2 newLocation3 pink"><i class="material-icons md-18">room</i><span>new area</span></p>
+                                    <p class="card-subtitle mb-2"><span> Feb 22, 2pm</span></p>
+                                    <p class="card-text">Senior Accociation</p>
+                                    <p class="card-text"><small class="text-muted">15 Goldies</small></p>
+                                </div>
+                        </div> 
+                        </div> 
+                            <div class="col-sm mt-5">
+                            <div class="card cardModal" style="width: 18rem;" onclick="openModal()">
+                                    <img class="card-img-top" src="images/gardening.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                            <h5 class="card-title">Book club</h5>
+                                            <p class="card-subtitle mb-2 pink newLocation4 pink"><i class="material-icons md-18">room</i><span>new area</span></p>
+                                            <p class="card-subtitle mb-2"><span> Feb 28, 4pm</span></p>
+                                            <p class="card-text">The book lovers</p>
+                                            <p class="card-text"><small class="text-muted">15 Goldies going</small></p>
+                                        </div>
+                            </div>
+                            </div>
+                            <div class="col-sm mt-5">
+                            <div class="card cardModal" style="width: 18rem;" onclick="openModal()">
+                                    <img class="card-img-top" src="images/photos/senior-painting.png" alt="Card image cap">
+                                    <div class="card-body">
+                                            <h5 class="card-title">Painting class</h5>
+                                            <p class="card-subtitle mb-2 pink newLocation5"><i class="material-icons md-18">room</i><span>new area</span></p>
+                                            <p class="card-subtitle mb-2"><span> March 2, 3pm</span></p>
+                                            <p class="card-text">School for applied Arts</p>
+                                            <p class="card-text"><small class="text-muted">1 Goldie</small></p>
+                                    </div>
+                            </div>
+                            </div>
+                            <div class="col-sm mt-5">
+                                <div class="card cardModal" style="width: 18rem;" onclick="openModal()">
+                                    <img class="card-img-top" src="images/photos/hiking-goup.png" alt="Card image cap">
+                                    <div class="card-body">
+                                            <h5 class="card-title">Sunday hike light</h5>
+                                            <p class="card-subtitle mb-2 pink newLocation6"><i class="material-icons md-18">room</i><span>new area</span></p>
+                                            <p class="card-subtitle mb-2"><span> March 5, 9am</span></p>
+                                            <p class="card-text">Active seniors group</p>
+                                            <p class="card-text"><small class="text-muted">3 Goldies</small></p>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="col-sm mt-5">
+                                <div class="card cardModal" style="width: 18rem;" onclick="openModal()">
+                                    <img class="card-img-top" src="images/photos/woman-baking.png" alt="Card image cap">
+                                    <div class="card-body">
+                                            <h5 class="card-title">Baking together</h5>
+                                            <p class="card-subtitle mb-2 pink newLocation7"><i class="material-icons md-18">room</i><span>new area</span></p>
+                                            <p class="card-subtitle mb-2"><span> March 2, 3pm</span></p>
+                                            <p class="card-text">a small circle of ladies who love to cook</p>
+                                            <p class="card-text"><small class="text-muted">6 Goldies</small></p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div> 
+                        </div>
+                    </div>
+                </div>
+     <!--Footer -->
+        <footer id="footer" class="bg-warning pt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <h4>Contact</h4>
+                        <p>contact@goldies.dk<br>Revstevej 76<br>1435 København<br>Danmark</p>
+                    </div>
+                    <div class="col-sm">
+                        <h4>Impressum</h4>
+                        <p>Terms and conditions<br>Privacy Policy</p>
+                        </div>
+                    <div class="col-sm">
+                        <img class="img-fluid w-50" src="images/Logo-white.png" alt="goldies logo">
+                        <p>&copy; Goldies 2020</p>
+                    </div>
+                    <div class="col-sm">
+                        <h4>Join Goldies</h4>
+                        <p><a class="btn btn-dark" href="#" role="button">Sign up</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="scripts/custom-script.js"></script>
+  </body>
+</html>

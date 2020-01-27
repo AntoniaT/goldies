@@ -7,13 +7,16 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css">
-  <!-- <link rel="stylesheet" href="bootstrap/dist/css/custom.css" type="text/css">--> 
-    <title>Goldies - Seniors</title>
+    <link rel="stylesheet" href="custom.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Goldies for Seniors</title>
   </head>
   <body>
+      <!-- Nav Bar -->
       <nav class="navbar navbar-expand-lg navbar-light bg-white">
           <a class="navbar-brand" href="index.html">
-                  <img src="images/Logo-yellow.png" width="100" alt="logo">
+                  <img src="images/Logo-yellow.png" width="130" alt="logo">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -22,101 +25,106 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                <a class="nav-link text-dark h5 ml-4 mt-2" href="index.html#about">About <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Events</a>
+                <a class="nav-link text-dark h5 ml-4 mt-2" href="index.html#events">Events</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">How</a>
+                <a class="nav-link text-dark h5 ml-4 mt-2" href="how.html">How</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="companies.html">For companies</a>
+                <a class="nav-link text-dark h5 ml-4 active mt-2" href="companies.html">For companies</a>
               </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
-              <button class="btn btn-dark my-2 my-sm-0" type="submit">Sign up</button>
+              <a class="nav-link text-dark h5 ml-4 mt-2" href="logIn.html">Log in</a>
+              <a class="btn btn-outline-warning my-2 my-sm-0 signUp btn-lg" href="join.html" role="button">Sign up</a>
             </form>
           </div>
         </nav>
     
       <!-- Main jumbotron for a primary marketing message or call to action -->
-        <div class="jumbotron hero">
-            <div class="container">
-                <div class="row">
+        <div class="jumbotron hero hero2-container">
+            <div class="container mt-5">
+                <div class="row pt-5">
                     <div class="col-sm">
                     </div>
-                    <div class="col-sm">
-                      <h1 class="display-5">Become an event organiser<br>and attract more customers</h1>
-                      <p>Search for an event in your area</p>
-                      <p><a class="btn btn-secondary" href="#" role="button">Get started</a></p>
+                    <div class="col-sm pt-3 ml-5 pl-5">
+                      <h1 class="display-5 pl-5">Become an event organiser and attract more customers</h1>
+                      <p class="pl-5"><a class="btn btn-dark mt-3" href="join.html" role="button">Get started with Goldies</a></p>
                     </div>            
             </div>
             </div>
         </div>
         <!--First section container-->
-          <div class="container mt-5">
+          <div class="container m-5 p-5">
+            <div class="mx-auto d-block w-25">
+                <img class="mx-auto d-block w-50" src="images/titles/How-turcoise@0,3x.png" alt="events title">
+            </div>
+            <h2 class="text-center mt-2 mb-5">How we work with event organizers</h2>
             <!-- Example row of columns -->
             <div class="row">
-              <div class="col-sm">
-                <h2>Why become an event organiser?</h2>
+              <div class="col-sm p-4">
+                <h3>Why become an event organiser?</h3>
                 <p>Do you organise events or activities for seniors? Maybe you work in an organisation that offers activities for elderly people, but you don’t know how to reach all of them? That’s where we can help! We are the biggest platform for seniors in Denmark and we want you to reach your target audience!</p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
               </div>
-              <div class="col-sm">
-                  <h2>We handle the booking and transport</h2>
-                  <p>Do you organise events or activities for seniors? Maybe you work in an organisation that offers activities for elderly people, but you don’t know how to reach all of them? That’s where we can help! We are the biggest platform for seniors in Denmark and we want you to reach your target audience!</p>
-                  <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+              <div class="col-sm p-4">
+                  <h3>We handle booking and transport</h3>
+                  <p>With our intuitive dashboard, you get an overview of all bookings. To make sure all senior citizens regardless of their impairments can enjoy your activities, we included a transport service to our platform. We pick seniors up at their homes and bring them to your event. We also bring them home after.</p>
               </div>
-              <div class="col-sm">
-                  <h2>How does it work for your organization?</h2>
+              <div class="col-sm p-4">
+                  <h3>How does it work for your organisation?</h3>
                   <p>In order to become one of our event organisers, you have to sign up on our website. After you answer our questions, we visit your company and have a quick chat. Once you are verified by our specialists, you can immediately set your events live, which can then be seen and booked by thousands of customers.</p>
-                  <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
                 </div>
-            </div>
-    
-            <hr>
-    
+            </div>    
           </div> <!-- /container -->
 
         <!--Second section container-->
-          <div class="container mt-5">
-            <h2 class="text-center">Check out which other companies work with us</h2>
-            <p class="text-center">Not quite convinced yet? Get to know with which companies we work together and why they choose to trust Goldies. Together we can help fight loneliness among seniors!</p>
+          <div class="container-fuid mt-5 mb-5 p-5 bg-light">
+            <h2 class="text-center pt-5">Check out our partner organisations</h2>
+            <p class="text-center"><strong>Not quite convinced yet?</strong> Get to know with which companies we work together and why they choose to trust Goldies. Together we can help fight loneliness among seniors!</p>
             <!-- Carousel Slider Images-->
-            <div class="carousel slide" data-ride="carousel">
+            <div class="carousel slide pb-5" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row">
-                                <div class="col"><img class="img-fluid" src="images/gardening.jpg" alt="1 slide"></div>
-                                <div class="col"><img class="img-fluid" src="images/senioren-spielen.jpg" alt="2 slide"></div>
-                                <div class="col"><img class="img-fluid" src="images/gardening.jpg" alt="3 slide"></div>
+                                <div class="col"><img class="img-fluid w-25" src="images/logos/CWA-logo.png" alt="1 slide"></div>
+                                <div class="col"><img class="img-fluid" src="images/logos/HIA-logo..png" alt="2 slide"></div>
+                                <div class="col"><img class="img-fluid w-25" src="images/logos/kommune-logo.png" alt="3 slide"></div>
                             </div>
                         </div>
                     </div>
                  </div>
           </div>
         <!--Third section container-->
-        <div class="container mt-5">
+        <div class="container mt-3">
+                <div class="mx-auto d-block w-25">
+                    <img class="mx-auto d-block w-50" src="images/titles/Reviews-yellow@0,3x.png" alt="events title">
+                </div>
                 <div class="text-center">
-                        <h2>What do clients say about Goldies?</h2>
+                        <h2>What do organisations say about Goldies?</h2>
                 </div>
                 <!-- Example row of columns -->
-                <div class="text-center">
-                    <p>I missed spending time with likeminded people. When you’re old, everything is about sacrifices and health problems. With Goldies I can just have a good time without worrying about transport!</p>
-                    <img class="img-fluid rounded-circle w-25" src="images/review-1.jpg" alt="woman gardening">
-                </div>
-        
-                <hr>
-        
+                <div class="row mt-5">    
+                  <div class="col-sm">
+                      <img class="img-fluid" src="images/photos/cyclingwithoutage-4.jpg" alt="woman gardening">
+                  </div>
+                  <div class="col-sm text-center mt-5 pt-5">
+                      <blockquote class="blockquote mb-0">
+                          <p>I’ve worked for Cycling Without Age for 8 years now, but with Goldies help, we were able to reach 200% more seniors in just 6 months and help them enjoy some fresh air. Highly recommended!</p>
+                          <footer class="blockquote-footer">Ole Kassow,<cite title="Source Title"> Founder of Cycling Without Age</cite></footer>
+                        </blockquote>
+                  </div>
+                </div>        
         </div>
                 <!--Fourth section container-->
                 <div class="container mt-5 mb-5">
                     <div class="text-center">
                             <h2>Answers to your questions</h2>
                     </div>
-                    <div id="accordion">
-                        <div class="card">
+                    <div id="accordion" class="m-5 p-5">
+                        <div id="customCard" class="card">
                           <div class="card-header bg-white" id="headingOne">
                             <h5 class="mb-0">
                               <button class="btn text-dark" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
@@ -131,7 +139,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="card">
+                        <div id="customCard" class="card">
                           <div class="card-header bg-white" id="headingTwo">
                             <h5 class="mb-0">
                               <button class="btn text-dark collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -145,7 +153,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="card">
+                        <div id="customCard" class="card">
                           <div class="card-header bg-white" id="headingThree">
                             <h5 class="mb-0">
                               <button class="btn text-dark collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -159,11 +167,11 @@
                             </div>
                           </div>
                         </div>
-                        <div class="card">
+                        <div id="customCard" class="card">
                             <div class="card-header bg-white" id="headingThree">
                               <h5 class="mb-0">
                                 <button class="btn text-dark collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    What if I have to cancel an event?
+                                    What if I have to cancel an event?<i class="material-icons">add</i>
                                 </button>
                               </h5>
                             </div>
@@ -206,5 +214,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="scripts/custom-script.js"></script>
   </body>
 </html>

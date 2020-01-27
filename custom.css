@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap');
+
+html{
+    font-family: 'Roboto', sans-serif!important;
+}
+.pink{
+    color: #EE6CA6;
+}
+.bg-pink{
+    background-color: #EE6CA6;
+}
+.custom-font{
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+/* #nav-background{
+    background-color: transparent!important;
+} */
+.navbar{
+    box-shadow: 0 0 15px rgba(0,0,0,.1)
+}
+/* additional styling for the hero section */
+.hero-container{
+    background-image: url("images/photos/hero-men-yellow.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.hero{
+    background-color: transparent;
+}
+/* additional styling for the first section on index */
+#about{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+#join{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+/* additional styling for the FAQ section */
+#customCard{
+    border: none;
+}
+.card-header{
+    border-bottom: 2px solid #59caad;
+}
+
+/* aditional styling for the forms*/
+
+.special-form-control{
+    border-bottom: 1px solid #43425D;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-radius: 0;
+    height: 30px;
+}
+.custom-label{
+    margin-bottom: 0px;
+}
+/* additional styling for the search results page*/
+
+.cardModal{
+    box-shadow: 0 0 15px rgba(0,0,0,.1)
+
+}
+/* additional styling for the companies page*/
+
+.hero2-container{
+    background-image: url("images/photos/cwa-hero-yellow.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
