@@ -8,43 +8,57 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="custom.css" type="text/css">
+    <!-- Goldies Icon-->
+    <link rel="icon" href="images/logos/goldies-icon@4x.png" type="image/icon">
+
     <title>Goldies - Seniors</title>
   </head>
   <body>
-      <!-- Nav Bar -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-white">
-          <a class="navbar-brand" href="index.html">
-                  <img src="images/Logo-yellow.png" width="130" alt="logo">
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link text-dark h5 ml-4 mt-2" href="index.html#about">About <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark h5 ml-4 mt-2" href="#">Events</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark h5 ml-4 mt-2" href="how.html">How</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark h5 ml-4 mt-2" href="companies.html">For companies</a>
-              </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <a class="nav-link text-dark h5 ml-4 mt-2" href="logIn.html">Log in</a>
-              <a class="btn btn-outline-warning my-2 my-sm-0 signUp btn-lg" href="join.html" role="button">Sign up</a>
-            </form>
-          </div>
-        </nav>
+        <!-- Nav Bar -->
+        <nav id="nav-background" class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand" href="index.html">
+                    <img src="images/Logo-yellow.png" width="130" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link text-dark h5 ml-4 mt-2 bold" href="index.html#about">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark h5 ml-4 mt-2 bold" href="index.html#events">Events</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark h5 ml-4 mt-2 bold" href="how.html">How</a>
+                </li>
+                <li class="nav-item dropdown active">
+                  <a class="nav-link text-dark h5 ml-4 mt-2 bold dropdown-toggle" id="navbarDropdownMenuLink" href="companies.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">For organisations</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="companies.html">Become an event organiser</a>
+                        <a class="dropdown-item" href="companies.html#howWeWork">How we work</a>
+                        <a class="dropdown-item" href="companies.html#partners">Our partners</a>
+                        <a class="dropdown-item" href="companies.html#reviewsPartner">Reviews</a>
+                        <a class="dropdown-item" href="companies.html#faq">FAQ</a>
+                    </div>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <a class="nav-link text-dark h5 ml-5 mt-2 bold" href="logIn.html">Log in</a>
+                <a class="btn btn-outline-warning my-2 my-sm-0 signUp btn-lg bold" href="join.html" role="button">Sign up</a>
+              </form>
+            </div>
+          </nav>
+  <!-- Back to top button-->
+      <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+
+  <!-- Join Form -->
         <div class="container mw-100">
             <div class="row">
             <div class="col-4">
-              <img class="img-fluid" src="images/photos/form-company.png" alt="seniors hiking">
+              <img class="img-fluid" src="images/photos/organizers-back.jpg" alt="seniors hiking">
             </div>
             <div class="col-8 mt-5 mb-5 pl-5 pr-5">
                 <div class="text-center">

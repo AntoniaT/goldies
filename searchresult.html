@@ -9,13 +9,15 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="custom.css" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+    <!-- Goldies Icon-->
+    <link rel="icon" href="images/logos/goldies-icon@4x.png" type="image/icon">
+   
     <title>Goldies - Seniors</title>
   </head>
   <body>
-         <!-- Nav Bar -->
-         <nav id="nav-background" class="navbar navbar-expand-lg navbar-light bg-white">
-                <a class="navbar-brand" href="index.html">
+        <!-- Nav Bar -->
+        <nav id="nav-background" class="navbar navbar-expand-lg navbar-light bg-white">
+                <a class="navbar-brand" href="#">
                         <img src="images/Logo-yellow.png" width="130" alt="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,34 +26,44 @@
               
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link text-dark h5 ml-4 mt-2" href="#about">About <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark h5 ml-4 mt-2 bold" href="index.html#about">About <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link text-dark h5 ml-4 mt-2" href="#events">Events</a>
+                      <a class="nav-link text-dark h5 ml-4 mt-2 bold" href="index.html#events">Events</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link text-dark h5 ml-4 mt-2" href="how.html">How</a>
+                      <a class="nav-link text-dark h5 ml-4 mt-2 bold" href="how.html">How</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-dark h5 ml-4 mt-2" href="companies.html">For companies</a>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link text-dark h5 ml-4 mt-2 bold dropdown-toggle" id="navbarDropdownMenuLink" href="companies.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">For organisations</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="companies.html">Become an event organiser</a>
+                            <a class="dropdown-item" href="companies.html#howWeWork">How we work</a>
+                            <a class="dropdown-item" href="companies.html#partners">Our partners</a>
+                            <a class="dropdown-item" href="companies.html#reviewsPartner">Reviews</a>
+                            <a class="dropdown-item" href="companies.html#faq">FAQ</a>
+                        </div>
                     </li>
                   </ul>
                   <form class="form-inline my-2 my-lg-0">
-                    <a class="nav-link text-dark h5 ml-5 mt-2" href="logIn-customer.html">Log in</a>
-                    <a class="btn btn-outline-warning my-2 my-sm-0 signUp btn-lg" href="join-customer.html" role="button">Sign up</a>
+                    <a class="nav-link text-dark h5 ml-5 mt-2 bold" href="logIn-customer.html">Log in</a>
+                    <a class="btn btn-outline-warning my-2 my-sm-0 signUp btn-lg bold" href="join-customer.html" role="button">Sign up</a>
                   </form>
                 </div>
               </nav>
+    <!-- Back to top button-->
+        <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+
     <!-- Search Events results -->
         <div class="container-fluid mt-5">
-              <h1 class="text-center">Discover activities in</h1>
+              <h1 class="text-center bold">Discover activities in</h1>
               <h2 id="newAreaField" class="text-center">test</h2>
                 <!-- Carousel Slider Images-->
                 <div class="container mt-5">
                     <div class="row mb-5">
                         <div class="col-sm mt-5">
-                        <div class="card cardModal" style="width: 18rem;" onclick="openModal()">
+                        <div class="card cardShadow" style="width: 18rem;" onclick="openModal()">
                                 <img class="card-img-top" src="images/photos/cycling-ride.png" alt="Card image cap">
                                 <div class="card-body">
                                         <h5 class="card-title">Cycling trip</h5>
@@ -63,22 +75,22 @@
                         </div>
                         </div>
                         <div class="col-sm mt-5">
-                        <div class="card cardModal" style="width: 18rem;" onclick="openModal()">
+                        <div class="card cardShadow" style="width: 18rem;" onclick="openModal()">
                                 <img class="card-img-top" src="images/senioren-spielen.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                        <h5 class="card-title">Senior Soft Yoga class</h5>
+                                        <h5 class="card-title">Board Games afternoon</h5>
                                         <p class="card-subtitle mb-2 pink newLocation2"><i class="material-icons md-18">room</i><span>new area</span></p>
                                         <p class="card-subtitle mb-2"><span> Feb 15, 3pm</span></p>
-                                        <p class="card-text">Sunrise Yoga Studio</p>
+                                        <p class="card-text">Multigeneration house</p>
                                         <p class="card-text"><small class="text-muted">7 Goldies</small></p>
                                 </div>
                         </div>
                         </div>
                         <div class="col-sm mt-5">
-                            <div class="card cardModal" style="width: 18rem;" onclick="openModal()">
+                            <div class="card cardShadow" style="width: 18rem;" onclick="openModal()">
                                 <img class="card-img-top" src="images/photos/granny-pc.png" alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title">Understand your computer</h5>
+                                    <h5 class="card-title">Computer for beginners</h5>
                                     <p class="card-subtitle mb-2 newLocation3 pink"><i class="material-icons md-18">room</i><span>new area</span></p>
                                     <p class="card-subtitle mb-2"><span> Feb 22, 2pm</span></p>
                                     <p class="card-text">Senior Accociation</p>
@@ -87,7 +99,7 @@
                         </div> 
                         </div> 
                             <div class="col-sm mt-5">
-                            <div class="card cardModal" style="width: 18rem;" onclick="openModal()">
+                            <div class="card cardShadow" style="width: 18rem;" onclick="openModal()">
                                     <img class="card-img-top" src="images/gardening.jpg" alt="Card image cap">
                                     <div class="card-body">
                                             <h5 class="card-title">Book club</h5>
@@ -99,7 +111,7 @@
                             </div>
                             </div>
                             <div class="col-sm mt-5">
-                            <div class="card cardModal" style="width: 18rem;" onclick="openModal()">
+                            <div class="card cardShadow" style="width: 18rem;" onclick="openModal()">
                                     <img class="card-img-top" src="images/photos/senior-painting.png" alt="Card image cap">
                                     <div class="card-body">
                                             <h5 class="card-title">Painting class</h5>
@@ -111,7 +123,7 @@
                             </div>
                             </div>
                             <div class="col-sm mt-5">
-                                <div class="card cardModal" style="width: 18rem;" onclick="openModal()">
+                                <div class="card cardShadow" style="width: 18rem;" onclick="openModal()">
                                     <img class="card-img-top" src="images/photos/hiking-goup.png" alt="Card image cap">
                                     <div class="card-body">
                                             <h5 class="card-title">Sunday hike light</h5>
@@ -123,7 +135,7 @@
                                 </div> 
                             </div>
                             <div class="col-sm mt-5">
-                                <div class="card cardModal" style="width: 18rem;" onclick="openModal()">
+                                <div class="card cardShadow" style="width: 18rem;" onclick="openModal()">
                                     <img class="card-img-top" src="images/photos/woman-baking.png" alt="Card image cap">
                                     <div class="card-body">
                                             <h5 class="card-title">Baking together</h5>

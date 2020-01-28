@@ -9,62 +9,89 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="custom.css" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <title>Goldies - Seniors</title>
+    <!-- Goldies Icon-->
+    <link rel="icon" href="images/logos/goldies-icon@4x.png" type="image/icon">
+   
+    <title>Goldies | How</title>
   </head>
   <body>
-      <nav class="navbar navbar-expand-lg navbar-light bg-white">
-          <a class="navbar-brand" href="index.html">
-                  <img src="images/Logo-yellow.png" width="130" alt="logo">
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link text-dark h5 ml-4 mt-2" href="index.html#about">About <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark h5 ml-4 mt-2" href="index.html#events">Events</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark h5 ml-4 mt-2" href="#">How</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark h5 ml-4 mt-2" href="companies.html">For companies</a>
-              </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <a class="nav-link text-dark h5 ml-4 mt-2" href="logIn-customer.html">Log in</a>
-              <a class="btn btn-outline-warning my-2 my-sm-0 signUp btn-lg" href="join-customer.html" role="button">Sign up</a>
-            </form>
-          </div>
-        </nav>
-    <!-- How section -->
+        <!-- Nav Bar -->
+        <nav id="nav-background" class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand" href="index.html">
+                    <img src="images/Logo-yellow.png" width="130" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link text-dark h5 ml-4 mt-2 bold" href="index.html#about">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark h5 ml-4 mt-2 bold" href="index.html#events">Events</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link text-dark h5 ml-4 mt-2 bold" href="how.html">How</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link text-dark h5 ml-4 mt-2 bold dropdown-toggle" id="navbarDropdownMenuLink" href="companies.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">For organisations</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="companies.html">Become an event organiser</a>
+                        <a class="dropdown-item" href="companies.html#howWeWork">How we work</a>
+                        <a class="dropdown-item" href="companies.html#partners">Our partners</a>
+                        <a class="dropdown-item" href="companies.html#reviewsPartner">Reviews</a>
+                        <a class="dropdown-item" href="companies.html#faq">FAQ</a>
+                    </div>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <a class="nav-link text-dark h5 ml-5 mt-2 bold" href="logIn-customer.html">Log in</a>
+                <a class="btn btn-outline-warning my-2 my-sm-0 signUp btn-lg bold" href="join-customer.html" role="button">Sign up</a>
+              </form>
+            </div>
+          </nav>    
+      <!-- Back to top button-->
+          <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+
+      <!-- How section -->
         <div class="container mt-5 mb-5">
-         <h2 class="text-center mt-5 pt-4">How does it work?</h2>
+         <h2 class="text-center mt-5 pt-4 custom-font2">How does it work?</h2>
          <p class="text-center">Our application is designed to make searching for an event and participating in activities <strong>simple and easy!</strong> However, if you need some help, we’re here for you.</p>
          <div class="row">
             <div class="col-sm">
-                <img class="img-fluid" src="images/step1.png">
-                <p>Join an event</p> 
+                <img class="img-fluid" src="images/graphics/step1-new@0.5x.png">
             </div>
             <div class="col-sm">
-                    <img class="img-fluid" src="images/step1.png">
-                    <p>Get picked up</p> 
+                    <img class="img-fluid" src="images/graphics/step2-new@1.5x.png">
             </div>
             <div class="col-sm">
-                    <img class="img-fluid" src="images/step1.png">
-                    <p>Have fun!</p> 
+                    <img class="img-fluid" src="images/graphics/step3-new@1.5x.png">
             </div> 
+         </div>
+         <div class="row mb-5 pb-5">
+            <div class="col-sm pr-4">
+              <h5 class="custom-font2">Join an event</h5> 
+              <p>Simply open up the platform and choose the event you like. Click the join button to register for the event.</p>
+            </div>
+            <div class="col-sm">
+                <h5 class="custom-font2">Get picked up</h5>
+                <p>After you join the event you can choose your preferred transport mode. A driver will pick you up at your door steps.</p> 
+            </div>
+            <div class="col-sm">
+                <h5 class="custom-font2">Have fun!</h5> 
+                <p>Now you can enjoy the event and connect with other people. And don't worry, we'll bring you home afterwards.</p>
+            </div>
          </div>
         </div>
      <!--FAQ section container-->
                 <div class="container mt-5 mb-5">
+                    <div class="mx-auto d-block w-25">
+                        <img class="mx-auto d-block w-25" src="images/titles/faq-turcoise.png" alt="events title">
+                    </div>
                         <div class="text-center">
-                                <h2>FAQ</h2>
+                                <h2 class="custom-font2">Answers to your questions</h2>
                         </div>
                         <div id="accordion" class="m-5 p-5">
                             <div id="customCard" class="card">
