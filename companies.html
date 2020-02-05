@@ -9,16 +9,18 @@
       <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css">
       <link rel="stylesheet" href="custom.css" type="text/css">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Aktiv Grotesk Adobe Font-->
+      <link rel="stylesheet" href="https://use.typekit.net/snv8aae.css">  
       <!-- Goldies Icon-->
       <link rel="icon" href="images/logos/goldies-icon@4x.png" type="image/icon">
     
       <title>Goldies | organisations</title>
     </head>
-    <body>
+    <body class="padding-nav">
     <!-- Nav Bar -->
-        <nav id="nav-background" class="navbar navbar-expand-lg navbar-light bg-white">
+        <nav id="nav-background" class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
             <a class="navbar-brand" href="index.html">
-                    <img src="images/Logo-yellow.png" width="130" alt="logo">
+                    <img src="images/Logo-yellow.png" width="150" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -27,27 +29,28 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                  <a class="nav-link text-dark h5 ml-4 mt-2 bold" href="index.html#about">About <span class="sr-only">(current)</span></a>
+                  <a class="nav-link text-dark h4 ml-4 mt-2" href="index.html#about">About <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-dark h5 ml-4 mt-2 bold" href="index.html#events">Events</a>
+                  <a class="nav-link text-dark h4 ml-4 mt-2" href="index.html#events">Activities</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-dark h5 ml-4 mt-2 bold" href="how.html">How</a>
+                  <a class="nav-link text-dark h4 ml-4 mt-2" href="how.html">How</a>
                 </li>
                 <li class="nav-item dropdown active">
-                  <a class="nav-link text-dark h5 ml-4 mt-2 bold dropdown-toggle" id="navbarDropdownMenuLink" href="companies.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">For organisations</a>
+                  <a class="nav-link text-dark h4 ml-4 mt-2 dropdown-toggle" id="navbarDropdownMenuLink" href="companies.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">For organisations</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="companies.html">Become an event organiser</a>
                         <a class="dropdown-item" href="companies.html#howWeWork">How we work</a>
                         <a class="dropdown-item" href="companies.html#partners">Our partners</a>
                         <a class="dropdown-item" href="companies.html#reviewsPartner">Reviews</a>
                         <a class="dropdown-item" href="companies.html#faq">FAQ</a>
+                        <a class="dropdown-item" href="companies.html#joinUs">Join us</a>
                     </div>
                 </li>
               </ul>
               <form class="form-inline my-2 my-lg-0">
-                <a class="nav-link text-dark h5 ml-5 mt-2 bold" href="logIn.html">Log in</a>
+                <a class="nav-link text-dark h4 ml-5 mt-2 bold" href="logIn.html">Log in</a>
                 <a class="btn btn-outline-warning my-2 my-sm-0 signUp btn-lg bold" href="join.html" role="button">Sign up</a>
               </form>
             </div>
@@ -60,7 +63,7 @@
                     <div class="col-sm">
                     </div>
                     <div class="col-sm ml-5 pl-5">
-                      <h1 class="display-5 pl-2 custom-font2 yellow">Become an event organiser and reach more customers</h1>
+                      <h1 class="display-5 pl-2 hero-heading yellow">Become one of our organisers and reach more seniors</h1>
                       <p class="pl-2"><a class="btn btn-warning mt-3" href="join.html" role="button">Get started</a></p>
                     </div>            
             </div>
@@ -71,7 +74,8 @@
         <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
 
       <!--First section container-->
-          <div class="container m-5 p-5" id="howWeWork">
+          <div id="howWeWork" class="pt-5"></div>
+          <div class="container mt-5 mb-5 p-5">
             <div class="mx-auto d-block w-25">
                 <img class="mx-auto d-block w-50" src="images/titles/How-turcoise@0,3x.png" alt="events title">
             </div>
@@ -103,36 +107,38 @@
           </div> <!-- /container -->
 
         <!--Second section container-->
-          <div class="container-fuid mt-5 mb-5 p-5 bg-light" id="partners">
+          <div id="partners" class="pt-5"></div>
+          <div class="container-fuid mt-5 mb-5 p-5 bg-light">
               <div class="mx-auto d-block w-25">
-                  <img class="mx-auto d-block w-50" src="images/titles/Partners-pink.png" alt="events title">
+                  <img class="mx-auto d-block w-50" src="images/titles/partners-pink@0,3x.png" alt="events title">
               </div>
               <div class="w-75 mx-auto">
                 <h2 class="text-center pt-2 custom-font2">Check out our partner organisations</h2>
-                <p class="text-center"><strong>Not quite convinced yet?</strong> Get to know with which companies we work together and why they choose to trust Goldies. Together we can help fight loneliness among seniors!</p>
+                <p class="text-center"><strong>Not quite convinced yet?</strong> Get to know with which organisations we work together and why they choose to trust Goldies. Together we can help fight loneliness among seniors!</p>
             </div>
             <!-- Carousel Slider Images-->
-            <div class="carousel slide pb-5 mt-5" data-ride="carousel">
+            <div class="carousel slide pb-5 mt-5 mb-5" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row">
-                                <div class="col"><img class="img-fluid w-25" src="images/logos/CWA-logo.png" alt="1 slide"></div>
-                                <div class="col"><img class="img-fluid" src="images/logos/HIA-logo..png" alt="2 slide"></div>
-                                <div class="col"><img class="img-fluid w-25" src="images/logos/kommune-logo.png" alt="3 slide"></div>
+                                <div class="col"><img class="img-fluid w-25 mx-auto d-block" src="images/logos/CWA-logo.png" alt="1 slide"></div>
+                                <div class="col"><img class="img-fluid mx-auto d-block" src="images/logos/HIA-logo..png" alt="2 slide"></div>
+                                <div class="col"><img class="img-fluid w-25 mx-auto d-block" src="images/logos/kommune-logo.png" alt="3 slide"></div>
                             </div>
                             <div class="row">
-                                <div class="col"><img class="img-fluid w-25" src="images/logos/CWA-logo.png" alt="1 slide"></div>
-                                <div class="col"><img class="img-fluid" src="images/logos/HIA-logo..png" alt="2 slide"></div>
-                                <div class="col"><img class="img-fluid w-25" src="images/logos/kommune-logo.png" alt="3 slide"></div>
+                                <div class="col"><img class="img-fluid w-50 mx-auto d-block" src="images/logos/trusted-seniors.png" alt="1 slide"></div>
+                                <div class="col"><img class="img-fluid w-25 mx-auto d-block" src="images/logos/seniors-logo.png" alt="2 slide"></div>
+                                <div class="col"><img class="img-fluid w-50 mx-auto d-block" src="images/logos/Altenheim_Friedrichsburg_Logo.png" alt="3 slide"></div>
                             </div>
                         </div>
                     </div>
                  </div>
           </div>
         <!--Third section container-->
-        <div class="container mt-3 mb-5 pb-5" id="reviewsPartner">
+        <div id="reviewsPartner" class="pt-5"></div>
+        <div class="container mt-5 mb-5 pb-5 pt-5">
                 <div class="mx-auto d-block w-25">
-                    <img class="mx-auto d-block w-50" src="images/titles/Reviews-yellow@0,3x.png" alt="events title">
+                    <img class="mx-auto d-block w-75" src="images/titles/Reviews-yellow@0,3x.png" alt="events title">
                 </div>
                 <div class="text-center">
                         <h2 class="custom-font2">What do organisations say about Goldies?</h2>
@@ -153,10 +159,11 @@
                   </div>
                 </div>        
         </div>
-                <!--Fourth section container-->
-                <div class="container-fluid mt-5 bg-light noMargin p-5" id="faq">
+        <!--Fourth section container-->
+        <div id="faq" class="pt-5"></div>
+                <div class="container-fluid mt-5 bg-light noMargin p-5">
                     <div class="mx-auto d-block w-25">
-                        <img class="mt-5 mx-auto d-block w-25" src="images/titles/faq-turcoise.png" alt="events title">
+                        <img class="mt-5 mx-auto d-block w-50" src="images/titles/faq-turcoise.png" alt="events title">
                     </div>
                     <div class="text-center">
                             <h2 class="custom-font2">Answers to your questions</h2>
@@ -173,7 +180,7 @@
                       
                           <div id="collapseOne" class="collapse bg-light" aria-labelledby="headingOne" data-parent="#accordion">
                             <div class="card-body">
-                                Answer one here
+                                You most definitely can, yes! We are here to help your organisation reach the right people, not matter if you run on volunteer work or have a profitable business. Our goal is to connect seniors with activities they enjoy and if you facilitate activities like that we would love to have you on board.
                             </div>
                           </div>
                         </div>
@@ -181,14 +188,13 @@
                           <div class="card-header bg-light" id="headingTwo">
                             <h5 class="mb-0">
                               <button class="btn text-dark collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                  How can I change an event?
+                                  How can I change an event that I already set up?
                               </button>
                             </h5>
                           </div>
                           <div id="collapseTwo" class="collapse bg-light" aria-labelledby="headingTwo" data-parent="#accordion">
                             <div class="card-body">
-                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                            </div>
+                                You can change an event on your dashboard up to 48 hours before the event would start. However, if you really need to change it later than 48 hours before the event, please call our customer service at +45 500 600 01 and we will help you arrange that. If you have to change an event up to 48 hours beforehand, log in to your dashboard first. Then go to the menu button "your events" on the left menu bar. Choose the event you want to change and change the parameter you need to adapt. Click on "publish my changes" and your event will be updated automatically. Please note that we give all participants notice of the changes once you publish them. Therefore make sure that the changes are correct before you publish them. You can also save the changes as a draft first, without publishing if you are not sure.</div>
                           </div>
                         </div>
                         <div id="customCard" class="card">
@@ -201,7 +207,7 @@
                           </div>
                           <div id="collapseThree" class="collapse bg-light" aria-labelledby="headingThree" data-parent="#accordion">
                             <div class="card-body">
-                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                              Yes, you can see how many seniors signed up to your event. Just go to the left menu bar and click the button "my events". Then choose the event you want and click it. You will then see all the details for your event and the list of people who already signed up for your event.
                             </div>
                           </div>
                         </div>
@@ -221,19 +227,43 @@
                           </div>
                       </div>
             
-            </div>
+                </div>
+         <!--Fifth section container-->
+         <div id="joinUs" class="pt-5"></div>
+                <div id="" class="container-fluid mt-5 mb-5 p-5">
+                    <div class="mx-auto d-block w-25">
+                            <img class="mx-auto d-block w-75" src="images/titles/Join-us-pink@0,3x.png" alt="events title">
+                    </div>
+                    <!-- Example row of columns -->
+                    <div class="row">
+                        <div class="col-sm">
+                                <img class="img-fluid" src="images/photos/Mockup-companies.png" alt="multiple devices">
+                        </div>
+                        <div class="col-sm">
+                            <h2 class="custom-font2">Your Goldies Dashboard</h2>
+                            <h5 class="custom-font2">Intuitive and easy to use as an organizer</h5>
+                            <ul class="mt-3">
+                              <li class="m-1"><strong>Personal Calendar:</strong> see all your events at a glance</li>
+                              <li class="m-1"><strong>Live bookings:</strong> see live who signs up to your events</li>
+                              <li class="m-1"><strong>Marketing tool:</strong> learn how you can reach more seniors</li>
+                            </ul>
+                            <p><a class="btn btn-warning" href="join.html" role="button">Start with Goldies now</a></p>
+                        </div>
+                    </div>        
+                  </div> 
+
         </main>
     
      <!--Footer -->
-        <footer id="footer" class="bg-warning pt-4">
+        <footer id="footer" class="bg-dark pt-4 text-white">
             <div class="container">
                 <div class="row">
                     <div class="col-sm">
-                        <h4>Contact</h4>
+                        <h4 class="text-warning">Contact</h4>
                         <p>contact@goldies.dk<br>Revstevej 76<br>1435 København<br>Danmark</p>
                     </div>
                     <div class="col-sm">
-                        <h4>Impressum</h4>
+                        <h4 class="text-warning">Impressum</h4>
                         <p>Terms and conditions<br>Privacy Policy</p>
                         </div>
                     <div class="col-sm">
@@ -241,7 +271,7 @@
                         <p>&copy; Goldies 2020</p>
                     </div>
                     <div class="col-sm">
-                        <h4>Join Goldies</h4>
+                        <h4 class="text-warning">Join Goldies</h4>
                         <p><a class="btn btn-dark" href="#" role="button">Sign up</a></p>
                     </div>
                 </div>

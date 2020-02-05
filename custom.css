@@ -2,7 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap');
 
-
+.cyanBtn{
+    background-color: #59CAAD!important;
+    border-color: #59CAAD;
+}
 html{
     font-family: 'Roboto', sans-serif!important;
 }
@@ -17,7 +20,8 @@ html{
 }
 body{
     color: #353E47;
-    font-family: 'Raleway', sans-serif!important;
+    font-family: aktiv-grotesk, sans-serif!important;
+    padding-top: 70px!important;
 }
 .custom-font{
   font-family: 'Source Sans Pro', sans-serif;
@@ -25,15 +29,34 @@ body{
   font-weight: bold;
 }
 .custom-font2{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: bold;
+    font-size: 24px!important; 
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+/*     font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold; */
   }
+.hero-heading{
+    font-size: 2.8em!important; 
+    font-weight: 700;
+    font-style: normal;
+}
 .bold{
-    font-weight: bold;
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.medium{
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 .noMargin{
     margin-left: 0px;
     margin-right: 0px;
+}
+.noBorder{
+    border: none;
 }
 /* #nav-background{
     background-color: transparent!important;
@@ -46,10 +69,19 @@ body{
     background-image: url("images/photos/hero-men-yellow.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 120vh;
 }
 .hero{
     background-color: transparent;
+}
+.spaceContainer{
+    height: 300px;
+}
+.spaceContainer2{
+    height: 90px;
+}
+.biggerFont{
+  font-size: 1.6em;
 }
 /* additional styling for the first section on index */
 #about{
@@ -81,6 +113,16 @@ body{
 .custom-label{
     margin-bottom: 0px;
 }
+.joinImg{
+    background-image: url("images/photos/organizers-back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.customerJoinImg{
+    background-image: url("images/photos/seniors-cooking.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 /* additional styling for the search results page*/
 
 .cardShadow{
@@ -98,6 +140,7 @@ body{
 .yellow{
     color: #FFDA66!important;
 }
+
 /* image hover effect from this source: https://miketricking.github.io/bootstrap-image-hover/ */
 .hovereffect {
     width: 100%;

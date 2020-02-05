@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="custom.css" type="text/css">
     <link rel="stylesheet" href="./node_modules/bootstrap/scss/main.css" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Aktiv Grotesk Adobe Font-->
+    <link rel="stylesheet" href="https://use.typekit.net/snv8aae.css">
+
     <!-- Goldies Icon-->
     <link rel="icon" href="images/logos/goldies-icon@4x.png" type="image/icon">
    
@@ -19,9 +22,9 @@
   <body>
     <div class="hero-container">
         <!-- Nav Bar -->
-        <nav id="nav-background" class="navbar navbar-expand-lg navbar-light bg-white">
+        <nav id="nav-background" class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
                 <a class="navbar-brand" href="#">
-                        <img src="images/Logo-yellow.png" width="130" alt="logo">
+                        <img src="images/Logo-yellow.png" width="150" alt="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -30,69 +33,125 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                      <a class="nav-link text-dark h5 ml-4 mt-2 bold" href="#about">About <span class="sr-only">(current)</span></a>
+                      <a class="nav-link text-dark h4 ml-4 mt-2 medium" href="#about">About <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link text-dark h5 ml-4 mt-2 bold" href="#events">Events</a>
+                      <a class="nav-link text-dark h4 ml-4 mt-2 medium" href="#events">Activities</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link text-dark h5 ml-4 mt-2 bold" href="how.html">How</a>
+                      <a class="nav-link text-dark h4 ml-4 mt-2 medium" href="how.html">How</a>
                     </li>
                     <li class="nav-item dropdown">
-                      <a class="nav-link text-dark h5 ml-4 mt-2 bold dropdown-toggle" id="navbarDropdownMenuLink" href="companies.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">For organisations</a>
+                      <a class="nav-link text-dark h4 ml-4 mt-2 medium dropdown-toggle" id="navbarDropdownMenuLink" href="companies.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">For organisations</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="companies.html">Become an event organiser</a>
                             <a class="dropdown-item" href="companies.html#howWeWork">How we work</a>
                             <a class="dropdown-item" href="companies.html#partners">Our partners</a>
                             <a class="dropdown-item" href="companies.html#reviewsPartner">Reviews</a>
                             <a class="dropdown-item" href="companies.html#faq">FAQ</a>
+                            <a class="dropdown-item" href="companies.html#joinUs">Join us</a>
                         </div>
                     </li>
                   </ul>
                   <form class="form-inline my-2 my-lg-0">
-                    <a class="nav-link text-dark h5 ml-5 mt-2 bold" href="logIn-customer.html">Log in</a>
+                    <a class="nav-link text-dark h4 ml-5 mt-2" href="logIn-customer.html">Log in</a>
                     <a class="btn btn-outline-warning my-2 my-sm-0 signUp btn-lg bold" href="join-customer.html" role="button">Sign up</a>
                   </form>
                 </div>
               </nav>
-    
+    <!--Modal for newsletter-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center bold" id="exampleModalLabel">Thank you for subscribing to our newsletter!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                        <p class="text-center">Check your inbox to find out about senior activities in your city.</p>
+                        <img class="mx-auto d-block w-50" src="images/graphics/newsletter-sent.png">
+                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+            </div>
       <!-- Main jumbotron for a primary marketing message or call to action -->
-        <div class="jumbotron hero">
+        <div class="jumbotron hero mb-5">
             <div class="container mt-5">
                 <div class="row">
                     <div class="col-sm">
                     </div>
-                    <div class="col-sm pt-5 pl-5 ml-5">
-                      <h1 class="display-5 pl-5 custom-font2">Laughing is healthy<br>Join our fun events</h1>
-                      <p class="pl-5">Search for an event in your area</p>
-                        <div class="pl-5 input-group mb-3 pr-5">
+                    <div class="col-sm pt-5 pl-5 ml-5 mt-5">
+                      <h1 class="display-5 pl-4 hero-heading">Laughing is healthy<br>Join our fun activities</h1>
+                      <p class="pl-4">Search for an event in your area</p>
+                        <div class="pl-4 input-group mb-3 pr-5">
                             <input id="areaInput" type="text" value="" onchange="getInput(this.value)" class="form-control" placeholder="Your city" aria-label="Recipient's username" aria-describedby="basic-addon2">
                             <div class="input-group-append" onclick="searchEvents()">
-                                <span class="input-group-text btn bg-dark text-white" id="basic-addon2">Search</span>
+                                <span class="input-group-text btn bg-dark text-white noBorder" id="basic-addon2">Search</span>
                             </div>
                         </div>
                     </div>            
             </div>
             </div>
         </div>
+        <div class="spaceContainer2"></div>
+        <!-- Section with 3 columns -->
+        <div class="card-deck mt-5 pt-5 p-5 ml-5 mr-5">
+                <div class="card cardShadow noBorder">
+                    <div class="card-body p-5">
+                        <div class="">
+                            <img class="w-25 pb-4 mx-auto d-block" src="images/graphics/senior.png" alt="seniors">
+                        </div>
+                        <h5 class="card-title custom-font2 biggerFont">For Seniors</h5>
+                        <p class="card-text">This is a platform which is designed for you. Find activities you like, meet other people and share your stories with them. We help you on the way and take care of your transport!</p>
+                        <!--<a href="#" class="btn btn-warning">Sign up</a>-->
+                    </div>
+                </div>
+                <div class="card cardShadow noBorder">
+                    <div class="card-body p-5">
+                        <div class="">
+                            <img class="w-50 pb-5 mx-auto d-block" src="images/graphics/family@3x.png" alt="seniors">
+                        </div>                  
+                        <h5 class="card-title custom-font2 biggerFont">For Family members</h5>
+                        <p class="card-text">Are you a family member and want to help your loved one to enjoy their time? You can use Goldies for another person and book activities for them. When you sign up, indicate that you are a family member. We take care of the transport!</p>
+                    <!-- <a href="#" class="btn btn-warning">Sign up</a> -->
+                        </div>
+                </div>
+                
+                <div class="card cardShadow noBorder">
+                    <div class="card-body p-5">
+                        <div class="">
+                            <img class="w-25 pb-4 mx-auto d-block" src="images/graphics/caregiver.png" alt="seniors">
+                        </div>
+                        <h5 class="card-title custom-font2 biggerFont">For Caregiver</h5>
+                        <p class="card-text">Are you a caregiver in a nursing home? You can use Goldies to arrange activities for residents in your home. When you sign up, indicate that you are a caregiver. We take care of the transport!</p>
+                        <!--<a href="#" class="btn btn-warning">Sign up</a>-->
+                    </div>
+                </div>
+        </div>
     </div>
+    <div class="spaceContainer"></div>
     <!-- Back to top button-->
     <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
 
-        <!--First section container-->
+    <!--First section container-->
     
-          <div class="container-fluid p-5 bg-light" id="about">
-            <!-- Example row of columns -->
+          <div class="container-fluid p-5 bg-light mt-5" id="about">
             <div class="row pt-5">
-              <div class="col-sm pr-4 pt-5">
-                <div class="mx-auto d-block w-50">
-                    <img class="mx-auto d-block w-50" src="images/titles/About-pink@0,3x.png" alt="events title">
-                </div>
-                <h2 class="custom-font2">We connect likeminded people and fight loneliness among seniors</h2>
-                <div class="mt-5">
-                    <p>Did you know socialising can strengthen your immune system? Studies showed that friendships improve physical and mental health. </p>
-                    <p>There are tons of things you can do, not matter how old you are! We are here to help you making your life enjoyable again. Because even if you’re close to 100, life can and should be beautiful!</p>
-                </div>
+              <div class="col-sm p-5">
+                    <div class="mx-auto d-block w-50">
+                        <img class="mx-auto d-block w-50" src="images/titles/About-pink@0,3x.png" alt="events title">
+                    </div>
+                    <h2 class="custom-font2 mt-3">We connect likeminded people and fight loneliness among seniors</h2>
+                    <div class="mt-5">
+                        <p>Did you know socialising can strengthen your immune system? Studies showed that friendships improve physical and mental health. </p>
+                        <p>There are tons of things you can do, not matter how old you are! We are here to help you making your life enjoyable again. Because even if you’re close to 100, life can and should be beautiful!</p>
+                        <p>Goldies is a platform where you can find various activities and meetups in your area. On our platform you can easily register for activities and also book our transport service to and from the events. We are here to help you with all arising questions. <strong>If you are not a senior yourself, but want to help someone you care for, this platform is also for you.</strong></p>
+                    </div>
               </div>
               <div class="col-sm pt-5">
                 <img class="img-fluid" src="images/gardening.jpg" alt="woman gardening">
@@ -111,7 +170,8 @@
           </div> <!-- /container -->
 
         <!--Second section container-->
-          <div class="container mt-5 mb-5 p-5" id="events">
+          <div id="events" class="pt-5"></div>
+          <div class="container mt-5 mb-5 p-5">
             <div class="mx-auto d-block w-25">
                 <img class="mx-auto d-block w-50" src="images/titles/Events-yellow@0,3x.png" alt="events title">
             </div>
@@ -123,7 +183,7 @@
                         <div class="carousel-item active">
                             <div class="row">
                                 <div class="col-sm">
-                                <div class="card cardShadow" style="width: 16rem;">
+                                <div class="card cardShadow mb-4" style="width: 18rem;">
                                                 <div class="hovereffect">
                                                     <img class="img-responsive card-img-top" src="images/senioren-spielen.jpg" alt="Card image cap">
                                                     <div class="overlay">
@@ -137,7 +197,7 @@
                                 </div>
                                 </div>
                                 <div class="col-sm">
-                                <div class="card cardShadow" style="width: 16rem;">  
+                                <div class="card cardShadow mb-4" style="width: 18rem;">  
                                     <div class="hovereffect">
                                         <img class="img-responsive card-img-top" src="images/photos/hiking-goup.png" alt="Card image cap">
                                         <div class="overlay">
@@ -151,7 +211,7 @@
                                 </div>
                                 </div>
                                 <div class="col-sm">
-                                    <div class="card cardShadow" style="width: 16rem;">
+                                    <div class="card cardShadow mb-4" style="width: 18rem;">
                                         <div class="hovereffect">
                                                 <img class="img-responsive card-img-top" src="images/photos/seniors-chess.png" alt="Card image cap">
                                                 <div class="overlay">
@@ -170,19 +230,18 @@
                  </div>
           </div>
         <!--Third section container-->
-        <div class="container mt-5 mb-5 p-5">
-            <div class="w-50">
-                <img class="w-25" src="images/titles/Transport-tuerkis.png" alt="events title">
-            </div>
-                <!-- Example row of columns -->
-                <div class="row">
-                  <div class="col-sm">
+        <div class="container-fluid mt-5 mb-5 p-5 bg-light">
+                <div class="row pt-5 pb-5">
+                  <div class="col-sm pl-5 pr-5">
+                    <div class="w-50 mt-5">
+                        <img class="w-75" src="images/titles/Transport-tuerkis.png" alt="events title">
+                    </div>
                     <h2 class="custom-font2">Choose the transport <br>that fits your needs</h2>
                     <p>Would you like to leave your house, but feel unsteady on your feet? No problem with Goldies! With each event you can choose your preferred transport mode and get picked up right on your door steps.</p>
                     <p>Because we care for our environment at Goldies, we encourage you to try our Cargo Bike and get some wind in your hair!</p>
-                    <p><a class="btn btn-info" href="#" role="button">Try Cargo Bike ride</a></p>
+                    <p><a class="btn btn-info cyanBtn btn-lg" href="#" role="button">Try Cargo Bike ride</a></p>
                   </div>
-                  <div class="col-sm">
+                  <div class="col-sm pt-5">
                     <img class="img-fluid" src="images/photos/Ole-Kassow-600x439-600x439.jpg" alt="woman gardening">
                   </div>
                 </div>        
@@ -224,35 +283,61 @@
                 </div>        
         </div>
         <!--Fifth section container-->
-        <div id="join" class="container-fluid mt-5 p-5">
+        <div id="join" class="container-fluid mt-5 p-5 bg-light">
                 <div class="mx-auto d-block w-25">
                         <img class="mx-auto d-block w-50" src="images/titles/Join-us@0,3x.png" alt="events title">
                 </div>
                 <!-- Example row of columns -->
                 <div class="row">
                     <div class="col-sm">
-                            <img class="img-fluid" src="images/graphics/multiple-devices1.png" alt="multiple devices">
+                            <img class="img-fluid" src="images/photos/Mockup-companies.png" alt="multiple devices">
                     </div>
                     <div class="col-sm">
                         <h2 class="custom-font2">Where to use our platform</h2>
                         <p>No need to despair! Get the simplest and easiest platform for seniors.</p>
-                        <p>You can use Goldies on your Computer, Tablet or your Smartphone.</p>
-                        <p><a class="btn btn-secondary" href="#" role="button">Get Goldies now</a></p>
+                        <p>You can use Goldies on your <strong>Computer, Tablet </strong>or your<strong> Smartphone.</strong></p>
+                        <p><a class="btn btn-warning btn-lg" href="#" role="button">Get Goldies now</a></p>
                     </div>
                 </div>        
-        </div>    
+        </div> 
+        <!--Sixth section container--> 
+        <div class="container-fluid mt-5 p-5  mb-5">
+            <div class="text-center">
+                    <img class="mx-auto d-block w-25" src="images/titles/newsletter-turquoise@0,33x.png" alt="events title">
+                    <h2 class="custom-font2 mt-2">Would you like to receive our Newsletter?</h2>
+                    <p>Always stay up to date with what's going on in your city.</p>
+
+            </div>
+            <div class="row d-block text-center mt-5">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Receive it for print
+                    </label>
+             </div>
+            <div class="input-group mt-3 mx-auto">
+                  <div class="row mx-auto">
+                    <form class="needs-validation" >
+                       <input type="text" class="form-control" placeholder="Your Email address" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    </form>
+                    <div class="input-group-append">
+                        <!-- Button trigger modal -->
+                        <button class="input-group-text btn-info" id="basic-addon2" data-toggle="modal" data-target="#exampleModal">Send</button>
+                    </div>
+                  </div>
+            </div> 
+        </div>
         </main>
     
      <!--Footer -->
-        <footer id="footer" class="bg-warning pt-4">
+        <footer id="footer" class="bg-dark pt-4 text-white">
             <div class="container">
                 <div class="row">
                     <div class="col-sm">
-                        <h4>Contact</h4>
+                        <h4 class="text-warning bold">Contact</h4>
                         <p>contact@goldies.dk<br>Revstevej 76<br>1435 København<br>Danmark</p>
                     </div>
                     <div class="col-sm">
-                        <h4>Impressum</h4>
+                        <h4 class="text-warning bold">Impressum</h4>
                         <p>Terms and conditions<br>Privacy Policy</p>
                         </div>
                     <div class="col-sm">
@@ -260,7 +345,7 @@
                         <p>&copy; Goldies 2020</p>
                     </div>
                     <div class="col-sm">
-                        <h4>Join Goldies</h4>
+                        <h4 class="text-warning bold">Join Goldies</h4>
                         <p><a class="btn btn-dark" href="#" role="button">Sign up</a></p>
                     </div>
                 </div>
