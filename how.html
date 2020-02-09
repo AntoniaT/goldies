@@ -7,8 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="custom.css" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--My custom stylesheet-->
+    <link rel="stylesheet" href="custom.css" type="text/css">
     <!--Aktiv Grotesk Adobe Font-->
     <link rel="stylesheet" href="https://use.typekit.net/snv8aae.css">
     <!-- Goldies Icon-->
@@ -20,7 +21,7 @@
         <!-- Nav Bar -->
         <nav id="nav-background" class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
             <a class="navbar-brand" href="index.html">
-                    <img src="images/Logo-yellow.png" width="150" alt="logo">
+                    <img src="images/Logo-yellow.png" width="200" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -35,7 +36,7 @@
                   <a class="nav-link text-dark h4 ml-4 mt-2" href="index.html#events">Activities</a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link text-dark h4 ml-4 mt-2" href="how.html">How</a>
+                  <a class="nav-link text-dark h4 ml-4 mt-2" href="how.html">How it works</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link text-dark h4 ml-4 mt-2 dropdown-toggle" id="navbarDropdownMenuLink" href="companies.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">For organisations</a>
@@ -50,8 +51,8 @@
                 </li>
               </ul>
               <form class="form-inline my-2 my-lg-0">
-                <a class="nav-link text-dark h4 ml-5 mt-2 bold" href="logIn-customer.html">Log in</a>
-                <a class="btn btn-outline-warning my-2 my-sm-0 signUp btn-lg bold" href="join-customer.html" role="button">Sign up</a>
+                <a class="nav-link text-dark h4 ml-5 mt-2" href="logIn-customer.html">Log in</a>
+                <a class="nav-link btn btn-outline-warning my-2 my-sm-0 signUp btn-lg bold" href="join-customer.html" role="button">Sign up</a>
               </form>
             </div>
           </nav>    
@@ -60,32 +61,30 @@
 
       <!-- How section -->
         <div class="container mt-5 mb-5 pt-5">
-            <div class="mx-auto d-block w-25">
-                <img class="mx-auto d-block w-50" src="images/titles/How-yellow@0,3x.png" alt="events title">
+            <div class="mx-auto d-block">
+                <img class="mx-auto d-block titlesHand" src="images/titles/How-yellow@0,3x.png" alt="events title">
             </div>
-         <h2 class="text-center pt-2 custom-font2">How does it work?</h2>
+         <h2 class="text-center custom-font2">How does it work?</h2>
          <p class="text-center">Our application is designed to make searching for an event and participating in activities <strong>simple and easy!</strong> However, if you need some help, we’re here for you.</p>
-         <div class="row">
-            <div class="col-sm">
-                <img class="img-fluid" src="images/graphics/step1-new@0.5x.png">
-            </div>
-            <div class="col-sm">
-                    <img class="img-fluid" src="images/graphics/step2-new@1.5x.png">
-            </div>
-            <div class="col-sm">
-                    <img class="img-fluid" src="images/graphics/step3-new@1.5x.png">
-            </div> 
-         </div>
          <div class="row mb-5 pb-5">
             <div class="col-sm pr-4">
+                <div>
+                    <img class="img-fluid" src="images/graphics/step1-new@1.5x.png">
+                </div>
               <h5 class="custom-font2">Join an event</h5> 
               <p>Simply open up the platform and choose the event you like. Click the join button to register for the event.</p>
             </div>
             <div class="col-sm">
+                <div>
+                    <img class="img-fluid" src="images/graphics/step2-new@1.5x.png">
+                </div>
                 <h5 class="custom-font2">Get picked up</h5>
                 <p>After you join the event you can choose your preferred transport mode. A driver will pick you up at your door steps.</p> 
             </div>
             <div class="col-sm">
+                <div>
+                    <img class="img-fluid" src="images/graphics/step3-new@1.5x.png">
+                </div> 
                 <h5 class="custom-font2">Have fun!</h5> 
                 <p>Now you can enjoy the event and connect with other people. And don't worry, we'll bring you home afterwards.</p>
             </div>
@@ -93,13 +92,13 @@
         </div>
      <!--FAQ section container-->
                 <div class="container mt-5 mb-5">
-                    <div class="mx-auto d-block w-25">
-                        <img class="mx-auto d-block w-50" src="images/titles/faq-turcoise.png" alt="events title">
+                    <div class="mx-auto d-block">
+                        <img class="mx-auto d-block titlesHand" src="images/titles/faq-turcoise.png" alt="events title">
                     </div>
                         <div class="text-center">
                                 <h2 class="custom-font2">Answers to your questions</h2>
                         </div>
-                        <div id="accordion" class="m-5 p-5">
+                        <div id="accordion" class="p-5">
                             <div id="customCard" class="card">
                               <div class="card-header bg-white" id="headingOne">
                                 <h5 class="mb-0">
@@ -111,7 +110,7 @@
                           
                               <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                                 <div class="card-body">
-                                    Answer one here
+                                    Simply click on "sign up" on top of this page. There you will find an option to choose that you will use our platform as a family member.
                                 </div>
                               </div>
                             </div>
@@ -125,7 +124,7 @@
                               </div>
                               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                                 <div class="card-body">
-                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                  You can use the platform together with a senior. When you sign up, simply choose the option to sign up as family member. Inside the platform you will see that your account differs in colour to the senior's account and in the top right corner you will see your profile with your families name.
                                 </div>
                               </div>
                             </div>
@@ -139,7 +138,7 @@
                               </div>
                               <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                                 <div class="card-body">
-                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                  When you sign up, make sure to indicate that you need personal assistance. Whenever you click "join" to attend an activity you will be able to choose personal assistance if we offer it for this particular event. We usually do, but sometimes it is not possible for us to offer that kind of service for specific events. If in doubt, you can always call our customer service at +45 80 600 20, we are happy to assist.
                                 </div>
                               </div>
                             </div>
@@ -153,7 +152,7 @@
                                 </div>
                                 <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
                                   <div class="card-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    You most definitely can! When signing up for Goldies, you will be prompted questions about your mobility. Please make sure to indicate that you are in a wheelchair, so we can suggest the best activities for you. We will facilitate transport for you with our special wheelchair accessible taxis.
                                   </div>
                                 </div>
                               </div>
@@ -167,7 +166,7 @@
                                     </div>
                                     <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
                                       <div class="card-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        Inside Goldies, you can go to your calender and choose the event you have to cancel. If you click on it, you will see a button saying "cancel". Just click the button and confirm that you cannot make it to this event. We will automatically receive your cancellation and tell the organizer. That is all you have to do. We hope you will join another time!
                                       </div>
                                     </div>
                                   </div>
@@ -180,20 +179,20 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm">
-                        <h4 class="text-warning bold">Contact</h4>
+                        <h4 class="text-warning bold footerHeading">Contact</h4>
                         <p>contact@goldies.dk<br>Revstevej 76<br>1435 København<br>Danmark</p>
                     </div>
                     <div class="col-sm">
-                        <h4 class="text-warning bold">Impressum</h4>
+                        <h4 class="text-warning bold footerHeading">Impressum</h4>
                         <p>Terms and conditions<br>Privacy Policy</p>
                         </div>
                     <div class="col-sm">
-                        <img class="img-fluid w-50" src="images/Logo-white.png" alt="goldies logo">
+                        <img class="footerLogo" src="images/logos/Logo-white.png" alt="goldies logo">
                         <p>&copy; Goldies 2020</p>
                     </div>
                     <div class="col-sm">
-                        <h4 class="text-warning bold">Join Goldies</h4>
-                        <p><a class="btn btn-warning" href="#" role="button">Sign up</a></p>
+                        <h4 class="text-warning bold footerHeading">Customer Support:</h4>
+                        <p>+45 80 600 20<br>Mon - Sun 8h - 22h</p>
                     </div>
                 </div>
             </div>

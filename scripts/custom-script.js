@@ -15,11 +15,12 @@ function scrollFunction() {
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
+  document.body.style.scrollBehavior = "smooth";
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-
+// make the search area function listen for the user input
 function getInput(event){
     console.log(event);
     localStorage.setItem('searchArea', event);
