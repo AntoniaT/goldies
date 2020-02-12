@@ -22,7 +22,6 @@ function topFunction() {
 
 // make the search area function listen for the user input
 function getInput(event){
-    console.log(event);
     localStorage.setItem('searchArea', event);
 }
  
@@ -31,6 +30,7 @@ function searchEvents(){
 }
 
 function updateArea(){
+   
     const newAreaField = document.querySelector("#newAreaField");
     const newLocationOnCard = document.querySelector(".newLocation span");
     const newLocationOnCard2 = document.querySelector(".newLocation2 span");
@@ -39,10 +39,9 @@ function updateArea(){
     const newLocationOnCard5 = document.querySelector(".newLocation5 span");
     const newLocationOnCard6 = document.querySelector(".newLocation6 span");
     const newLocationOnCard7 = document.querySelector(".newLocation7 span");
-    console.log(newLocationOnCard);
- //   console.log(newAreaField);
+
     let newArea = localStorage.getItem('searchArea');
- //   console.log(newArea);
+
     newAreaField.textContent = newArea;
     newLocationOnCard.textContent = newArea;
     newLocationOnCard2.textContent = newArea;

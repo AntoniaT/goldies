@@ -159,18 +159,18 @@ body{
     font-style: normal;
 }
 .hero-container{
-    background-image: url("images/photos/hero-men-yellow2.png");
+    background-image: url("./images/photos/hero-men-yellow2.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 120vh;
     @include media-breakpoint-down(md){
-        background-image: url("images/photos/hero-men-yellow-sm.png");
+        background-image: url("./images/photos/hero-men-yellow-sm.png");
         background-repeat: no-repeat;
         background-size: cover;
         height: 120vh;
     }
     @include media-breakpoint-down(sm){
-        background-image: url("images/photos/hero-men-yellow-xs.png");
+        background-image: url("./images/photos/hero-men-yellow-xs.png");
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -244,16 +244,33 @@ body{
     }
 }
 .cardImg{
-    width: 8vw;
+    width: 6vw;
     @include media-breakpoint-down(md){ 
-        width: 10vw;
+        width: 6vw;
+        padding-top: 2rem;
+    }
+    @include media-breakpoint-down(sm){
+        width: 7vw;
+        display: block;
+        margin: auto!important;
+    }
+    @include media-breakpoint-down(xs){        
+        width: 18vw;
+    }
+}
+.cardImg2{
+    width: 12vw;
+    @include media-breakpoint-down(md){ 
+        width: 12vw;
     }
     @include media-breakpoint-down(sm){
         display: block;
         margin: auto!important;
     }
     @include media-breakpoint-down(xs){
+        width: 30vw;
     }
+
 }
 /* additional styling for the first section on index */
 #about{
@@ -340,12 +357,12 @@ body{
     margin-bottom: 0px;
 }
 .joinImg{
-    background-image: url("images/photos/organizers-back.jpg");
+    background-image: url("./images/photos/organizers-back.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 .customerJoinImg{
-    background-image: url("images/photos/seniors-cooking.png");
+    background-image: url("./images/photos/seniors-cooking.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -366,7 +383,7 @@ body{
 /* additional styling for the companies page*/
 
 .hero2-container{
-    background-image: url("images/photos/people-taking-group-picture-3184398@0\,25x.jpg");
+    background-image: url("./images/photos/group-organizer.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;

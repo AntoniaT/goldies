@@ -10067,14 +10067,14 @@ body {
 }
 
 .hero-container {
-  background-image: url("images/photos/hero-men-yellow2.png");
+  background-image: url("./images/photos/hero-men-yellow2.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 120vh;
 }
 @media (max-width: 991.98px) {
   .hero-container {
-    background-image: url("images/photos/hero-men-yellow-sm.png");
+    background-image: url("./images/photos/hero-men-yellow-sm.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 120vh;
@@ -10082,7 +10082,7 @@ body {
 }
 @media (max-width: 767.98px) {
   .hero-container {
-    background-image: url("images/photos/hero-men-yellow-xs.png");
+    background-image: url("./images/photos/hero-men-yellow-xs.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -10181,19 +10181,47 @@ body {
 }
 
 .cardImg {
-  width: 8vw;
+  width: 6vw;
 }
 @media (max-width: 991.98px) {
   .cardImg {
-    width: 10vw;
+    width: 6vw;
+    padding-top: 2rem;
   }
 }
 @media (max-width: 767.98px) {
   .cardImg {
+    width: 7vw;
     display: block;
     margin: auto !important;
   }
 }
+@media (max-width: 575.98px) {
+  .cardImg {
+    width: 18vw;
+  }
+}
+
+.cardImg2 {
+  width: 12vw;
+}
+@media (max-width: 991.98px) {
+  .cardImg2 {
+    width: 12vw;
+  }
+}
+@media (max-width: 767.98px) {
+  .cardImg2 {
+    display: block;
+    margin: auto !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .cardImg2 {
+    width: 30vw;
+  }
+}
+
 /* additional styling for the first section on index */
 #about {
   margin-left: 0px;
@@ -10303,13 +10331,13 @@ body {
 }
 
 .joinImg {
-  background-image: url("images/photos/organizers-back.jpg");
+  background-image: url("./images/photos/organizers-back.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .customerJoinImg {
-  background-image: url("images/photos/seniors-cooking.png");
+  background-image: url("./images/photos/seniors-cooking.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -10332,7 +10360,7 @@ body {
 
 /* additional styling for the companies page*/
 .hero2-container {
-  background-image: url("images/photos/people-taking-group-picture-3184398@0,25x.jpg");
+  background-image: url("./images/photos/group-organizer.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
