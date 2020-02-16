@@ -13,6 +13,8 @@
 @mixin for-big-size {
     @media (min-width: 1070px) and (max-width: 1200px)  { @content; }
 }
+$box-shadow: 0 0 15px rgba(0,0,0,.1);
+
 .cyanBtn{
     background-color: #59CAAD!important;
     border-color: #59CAAD;
@@ -159,7 +161,7 @@ body{
     font-style: normal;
 }
 .hero-container{
-    background-image: url("./images/photos/hero-men-yellow2.png");
+    background-image: url("./images/photos/hero-men-yellow-lg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 120vh;
@@ -312,6 +314,28 @@ body{
 .blockquote{
     font-size: 1.15rem!important;
 }
+/* additional styling for the pricing section on how.html */
+
+.card1{
+    max-height: 450px;
+    box-shadow: $box-shadow;
+    transition: all .3s ease-in;
+}
+.card2{
+    border: 4px solid #EE6CA6!important;
+    min-height: 500px;
+    transition: all .3s ease-in;
+}
+.card3{
+    max-height: 450px;
+    transition: all .3s ease-in;
+    box-shadow: $box-shadow;
+}
+.card1:hover, .card2:hover, .card3:hover{
+    cursor: pointer;
+    transform: scale(1.03); 
+}
+
 /* additional styling for the FAQ section */
 #customCard{
     border: none;

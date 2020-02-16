@@ -35,6 +35,9 @@ const caregiverBtn = document.querySelector("#caregiverBtn");
 // remove column class from form so that it resizes to one column
 
 const formCont = document.querySelector("#formCont");
+const formCont2 = document.querySelector("#formCont2");
+const formCont3 = document.querySelector("#formCont3");
+const formCont4 = document.querySelector("#formCont4");
 
 window.addEventListener('resize', changeForm);
 
