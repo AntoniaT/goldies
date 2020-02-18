@@ -20,7 +20,7 @@
         <!-- Nav Bar -->
         <nav id="nav-background" class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
             <a class="navbar-brand" href="index.html">
-                    <img src="images/logos/logo-lightgold.png" width="250" alt="logo">
+                    <img class="navLogo" src="images/logos/logo-lightgold.png" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -60,18 +60,17 @@
   <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
 
       <!-- Sign up form element -->
-        <div class="container mw-100 pt-3">
-          <div class="row mt-5">
-          <div class="col-4 customerJoinImg">
+        <div class="allFormsGrid mw-100 pt-3">
+          <div class="customerJoinImg">
           </div>
-          <div id="formCont" class="col-8 mt-5 pb-5 ">
+          <div id="formCont" class="mt-5 pb-5">
               <div class="text-center mt-5 mb-4">
                 <img class="joinCustTitle titlesHand" src="images/titles/Join-us@0,3x.png" alt="join us title">
                 <p>Please complete to create your account.</p>
               </div>
             <div>
               <form class="pl-5 pr-5 needs-validation">
-                  <div class="mb-5">
+                  <div class="container mb-5">
                       <div class="form-check mb-2">
                           <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                           <label class="form-check-label" for="exampleRadios1">
@@ -93,11 +92,11 @@
                   </div>
               </form>
               <form class="pl-5 pr-5 needs-validation" novalidate>
-                  <div class="form-group">
+                  <div class="form-group container">
                   <div class="row">
-                    <div class="col">
+                    <div class="col-sm">
                       <label for="validationCustom01" class="custom-label">First name</label>
-                      <input type="text" id="validationCustom01" class="form-control special-form-control" required>
+                      <input type="text" id="validationCustom01" class="form-control special-form-control2" required>
                       <div class="valid-feedback">
                           Looks good!
                       </div>
@@ -105,9 +104,9 @@
                           Please provide your first name.
                       </div>
                     </div>
-                    <div class="col">
+                    <div class="col-sm">
                       <label for="validationCustom02" class="custom-label">Last name</label>
-                      <input type="text" id="validationCustom02" class="form-control special-form-control" required>
+                      <input type="text" id="validationCustom02" class="form-control special-form-control2" required>
                       <div class="valid-feedback">
                           Looks good!
                       </div>
@@ -117,7 +116,7 @@
                     </div>
                   </div>
                    </div>
-                  <div class="form-group">
+                  <div class="form-group container">
                       <label for="exampleInputEmail1" class="custom-label">Email address</label>
                       <input type="email" class="form-control special-form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
                       <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
@@ -128,10 +127,11 @@
                           Please provide your email address.
                       </div>
                   </div>
+                  <div class="form-group container">
                   <div class="row">
-                    <div class="form-group col">
+                    <div class="col-sm">
                       <label for="exampleInputPassword1" class="custom-label">Password</label>
-                      <input type="password" class="form-control special-form-control" id="exampleInputPassword1" required>
+                      <input type="password" class="form-control special-form-control2" id="exampleInputPassword1" required>
                       <div class="valid-feedback">
                           Looks good!
                       </div>
@@ -139,9 +139,9 @@
                           Please choose a password.
                       </div>
                     </div>
-                    <div class="form-group col">
+                    <div class="col-sm">
                         <label for="exampleInputPassword1" class="custom-label">Confirm Password</label>
-                        <input type="password" class="form-control special-form-control" id="exampleInputPassword2" required>
+                        <input type="password" class="form-control special-form-control2" id="exampleInputPassword2" required>
                         <div class="valid-feedback">
                             Looks good!
                         </div>
@@ -150,6 +150,8 @@
                         </div>
                     </div>
                   </div>
+                  </div>
+                  <div class="container">
                     <div class="form-check">
                         <input type="checkbox" class="form-check-input" id="customCheck" required>
                         <label class="form-check-label" for="invalidCheck2">I agree with terms and conditions</label>
@@ -160,10 +162,11 @@
                   <div class="mt-3">
                    <a href="thankYou-customer.html" class="btn btn-dark btn-lg">Sign up</a>
                   </div>
+                </div>
                 </form>
             </div>
            </div>  
-          </div>
+          
           </div>
         </main>
     

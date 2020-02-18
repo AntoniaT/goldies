@@ -9886,6 +9886,15 @@ h3 {
 html {
   font-family: "Roboto", sans-serif !important;
 }
+@media (max-width: 767.98px) {
+  html {
+    overflow-x: hidden;
+  }
+}
+
+html, body {
+  overflow-x: hidden;
+}
 
 p {
   font-size: 1.15rem !important;
@@ -9917,6 +9926,21 @@ body {
 @media (max-width: 767.98px) {
   .navbar {
     text-align: center;
+    width: 100vw;
+  }
+}
+
+.navLogo {
+  width: 230px;
+}
+@media (max-width: 767.98px) {
+  .navLogo {
+    width: 150px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1073px) {
+  .navLogo {
+    width: 200px;
   }
 }
 
@@ -10066,6 +10090,31 @@ body {
   }
 }
 
+.subHero-heading {
+  font-size: 1.8em;
+  font-style: normal;
+}
+@media (max-width: 767.98px) {
+  .subHero-heading {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .subHero-heading {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 992px) and (max-width: 1073px) {
+  .subHero-heading {
+    font-size: 1.6em;
+  }
+}
+@media (min-width: 1070px) and (max-width: 1200px) {
+  .subHero-heading {
+    font-size: 1.6em;
+  }
+}
+
 .hero-container {
   background-image: url("./images/photos/hero-men-yellow-lg.jpg");
   background-repeat: no-repeat;
@@ -10092,9 +10141,26 @@ body {
   background-color: transparent;
 }
 
+.heroTextCont {
+  padding-top: 5rem;
+  padding-left: 9rem;
+  padding-right: 3rem;
+}
 @media (max-width: 767.98px) {
   .heroTextCont {
     margin-left: 0px !important;
+    padding-top: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.searchField {
+  padding-right: 5rem !important;
+}
+@media (max-width: 767.98px) {
+  .searchField {
+    padding-right: 0 !important;
   }
 }
 
@@ -10230,7 +10296,8 @@ body {
 }
 @media (max-width: 767.98px) {
   #about {
-    margin-top: 900px;
+    margin-top: 1200px;
+    padding: 0 !important;
   }
 }
 
@@ -10268,6 +10335,13 @@ body {
   color: grey;
 }
 
+/* additional styling for the transport section */
+@media (max-width: 767.98px) {
+  #transport {
+    padding: 0 !important;
+  }
+}
+
 /* additional styling for the review section */
 .blockquote {
   font-size: 1.15rem !important;
@@ -10275,19 +10349,16 @@ body {
 
 /* additional styling for the pricing section on how.html */
 .card1 {
-  max-height: 450px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in;
 }
 
 .card2 {
   border: 4px solid #EE6CA6 !important;
-  min-height: 500px;
   transition: all 0.3s ease-in;
 }
 
 .card3 {
-  max-height: 450px;
   transition: all 0.3s ease-in;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
@@ -10295,6 +10366,14 @@ body {
 .card1:hover, .card2:hover, .card3:hover {
   cursor: pointer;
   transform: scale(1.03);
+}
+
+.card1 {
+  margin-right: 1rem;
+}
+
+.card2 {
+  margin-right: 1rem;
 }
 
 /* additional styling for the FAQ section */
@@ -10348,6 +10427,27 @@ body {
   border-top: none;
   border-radius: 0;
   height: 30px;
+  width: 40vw;
+}
+@media (max-width: 767.98px) {
+  .special-form-control {
+    width: 60vw;
+  }
+}
+@media (max-width: 575.98px) {
+  .special-form-control {
+    width: 70vw;
+  }
+}
+
+.special-form-control2 {
+  border-bottom: 1px solid #43425D;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-radius: 0;
+  height: 30px;
+  padding-left: 0px !important;
 }
 
 .custom-label {
@@ -10365,6 +10465,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (max-width: 767.98px) {
+  .customerJoinImg {
+    display: none;
+  }
+}
 
 @media (max-width: 767.98px) {
   .joinCustTitle {
@@ -10377,17 +10482,125 @@ body {
   }
 }
 
+.allFormsGrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+@media (max-width: 767.98px) {
+  .allFormsGrid {
+    display: block;
+    margin: auto;
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .allFormsGrid {
+    display: block;
+    width: 90vw;
+    margin: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+#formCont3, #formCont2, #formCont4 {
+  padding-left: 8rem;
+  padding-right: 3rem;
+}
+@media (max-width: 575.98px) {
+  #formCont3, #formCont2, #formCont4 {
+    padding-left: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  #formCont3, #formCont2, #formCont4 {
+    padding-left: 2rem;
+  }
+}
+/* additional styling for the thank you pages*/
+.thankYou {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.thankYou img {
+  width: 20vw;
+}
+@media (max-width: 575.98px) {
+  .thankYou img {
+    width: 50vw;
+  }
+}
+@media (max-width: 767.98px) {
+  .thankYou {
+    text-align: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .thankYou {
+    text-align: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
 /* additional styling for the search results page*/
 .cardShadow {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 /* additional styling for the companies page*/
+.hero-heading2 {
+  font-size: 2.8em;
+  font-weight: 700;
+  font-style: normal;
+}
+@media (max-width: 767.98px) {
+  .hero-heading2 {
+    font-size: 1.6em;
+    padding-right: 2rem;
+    padding-left: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .hero-heading2 {
+    font-size: 1.6em;
+    padding-left: 0;
+  }
+}
+@media (min-width: 992px) and (max-width: 1073px) {
+  .hero-heading2 {
+    font-size: 2em;
+    padding-left: 0;
+  }
+}
+@media (min-width: 1070px) and (max-width: 1200px) {
+  .hero-heading2 {
+    font-size: 2.2em;
+  }
+}
+
 .hero2-container {
   background-image: url("./images/photos/group-organizer.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+}
+@media (max-width: 991.98px) {
+  .hero2-container {
+    background-image: url("./images/photos/group-organizer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+}
+@media (max-width: 575.98px) {
+  .hero2-container {
+    background-image: url("./images/photos/group-organizer-xs.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+  }
 }
 
 .yellow {
