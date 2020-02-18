@@ -280,7 +280,7 @@ body{
         margin-bottom: 30px!important;
     }
 }
-.card-body{
+.card-body-index{
     padding: 3rem;
     @include media-breakpoint-down(md){ 
         padding: 1rem;
@@ -349,12 +349,14 @@ body{
     filter: brightness(85%);
 }
 .categTag{
-    cursor: auto;
+    color: #43425D;
+    border: 1px solid #43425D;
+    padding: 6px 12px;
+    border-radius: 0.25rem;
+    min-width: 135px;
+    max-width: 200px;
 }
-.categTag:hover{
-    background-color: transparent;
-    color: grey;
-}
+
 /* additional styling for the transport section */
 #transport{
     @include media-breakpoint-down(sm){
@@ -390,9 +392,6 @@ body{
 .card2{
     margin-right: 1rem;
 }
-.card3{
-} 
-
 
 /* additional styling for the FAQ section */
 #customCard{
@@ -581,7 +580,58 @@ body{
 .yellow{
     color: #FFDA66!important;
 }
+/* additional styling for the pricing page for organisations */
 
+
+.cardPartner1{
+    box-shadow: $box-shadow;
+    transition: all .3s ease-in;
+    margin-right: 1rem;
+    width: 10rem;
+    padding: 1rem;
+    @include media-breakpoint-down(xs){
+        width: 18rem;
+        margin: auto;
+    }
+    @include media-breakpoint-down(sm){
+        width: 18rem;
+        margin: auto;
+    }
+}
+.cardPartner2{
+    border: 4px solid #EE6CA6!important;
+    transition: all .3s ease-in;
+    margin-right: 1rem;
+    padding: 1rem;
+    @include media-breakpoint-down(xs){
+        width: 18rem;
+        margin: auto;
+    }
+    @include media-breakpoint-down(sm){
+        width: 18rem;
+        margin: auto;
+    }
+}
+
+.cardPartner1:hover, .cardPartner2:hover{
+    cursor: pointer;
+    transform: scale(1.03); 
+}
+.cardPartnerCont{
+   width: 70vw;
+   padding: 3rem;
+   margin: auto;
+   @include media-breakpoint-down(xs){
+       width: 100vw;
+       padding: 1rem;
+       margin: auto
+   }
+   @include media-breakpoint-down(sm){
+    width: 100vw;
+    padding: 1rem;
+    margin: auto
+}
+}
 /* image hover effect from this source: https://miketricking.github.io/bootstrap-image-hover/ */
 .hovereffect {
     width: 100%;

@@ -10232,16 +10232,16 @@ body {
   }
 }
 
-.card-body {
+.card-body-index {
   padding: 3rem;
 }
 @media (max-width: 991.98px) {
-  .card-body {
+  .card-body-index {
     padding: 1rem;
   }
 }
 @media (max-width: 767.98px) {
-  .card-body {
+  .card-body-index {
     padding: 1.5rem;
   }
 }
@@ -10327,12 +10327,12 @@ body {
 }
 
 .categTag {
-  cursor: auto;
-}
-
-.categTag:hover {
-  background-color: transparent;
-  color: grey;
+  color: #43425D;
+  border: 1px solid #43425D;
+  padding: 6px 12px;
+  border-radius: 0.25rem;
+  min-width: 135px;
+  max-width: 200px;
 }
 
 /* additional styling for the transport section */
@@ -10605,6 +10605,71 @@ body {
 
 .yellow {
   color: #FFDA66 !important;
+}
+
+/* additional styling for the pricing page for organisations */
+.cardPartner1 {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in;
+  margin-right: 1rem;
+  width: 10rem;
+  padding: 1rem;
+}
+@media (max-width: 575.98px) {
+  .cardPartner1 {
+    width: 18rem;
+    margin: auto;
+  }
+}
+@media (max-width: 767.98px) {
+  .cardPartner1 {
+    width: 18rem;
+    margin: auto;
+  }
+}
+
+.cardPartner2 {
+  border: 4px solid #EE6CA6 !important;
+  transition: all 0.3s ease-in;
+  margin-right: 1rem;
+  padding: 1rem;
+}
+@media (max-width: 575.98px) {
+  .cardPartner2 {
+    width: 18rem;
+    margin: auto;
+  }
+}
+@media (max-width: 767.98px) {
+  .cardPartner2 {
+    width: 18rem;
+    margin: auto;
+  }
+}
+
+.cardPartner1:hover, .cardPartner2:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+.cardPartnerCont {
+  width: 70vw;
+  padding: 3rem;
+  margin: auto;
+}
+@media (max-width: 575.98px) {
+  .cardPartnerCont {
+    width: 100vw;
+    padding: 1rem;
+    margin: auto;
+  }
+}
+@media (max-width: 767.98px) {
+  .cardPartnerCont {
+    width: 100vw;
+    padding: 1rem;
+    margin: auto;
+  }
 }
 
 /* image hover effect from this source: https://miketricking.github.io/bootstrap-image-hover/ */
